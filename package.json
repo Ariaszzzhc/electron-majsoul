@@ -1,0 +1,30 @@
+{
+  "name": "electron-majsoul",
+  "version": "1.0.0",
+  "description": "Majsoul",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "electron-majsoul",
+    "mac": {
+      "icon": "assets/icons/majsoul.png",
+      "category": "public.app-category.games"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icons/majsoul.png"
+    },
+    "linux": {
+      "icon": "assets/icons/majsoul.png"
+    }
+  },
+  "author": "Arias",
+  "devDependencies": {
+    "electron": "^4.0.7",
+    "electron-builder": "^20.39.0"
+  }
+}
